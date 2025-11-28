@@ -23,6 +23,22 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        Login: Login {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp Y &kp M &kp O &kp R &kp I &kp T &kp A &kp N &kp I &kp N0 &kp N0 &kp N1 &kp TAB &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp N2 &kp N6 &kp AT &kp RET>;
+            label = "LOGIN";
+            wait-ms = <20>;
+        };
+
+        Jump_cell: Jump_cell {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F5>, <&macro_wait_time 20>, <&kp ENTER>;
+
+            label = "JUMP_CELL";
+        };
     };
 
     behaviors {
