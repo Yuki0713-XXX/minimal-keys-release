@@ -203,10 +203,10 @@
 
         Mac_num {
             bindings = <
-&kp DEL               &kp PERIOD  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9                                  &kp CARET         &kp AMPERSAND       &kp RS(UP_ARROW)    &kp F4               &kp F5
-&kp BACKSPACE         &kp COMMA   &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0    &kp UNDERSCORE  &kp EXCLAMATION   &kp RS(LEFT_ARROW)  &kp RS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PERCENT
-&mt LEFT_SHIFT ASTRK  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL       &kp LG(SPACE)   &kp LEFT_BRACKET  &kp LG(C)           &kp LG(X)           &kp LG(V)            &kp F12
-&kp RG(SPACE)         &kp PLUS    &kp NUMBER_0  &kp RS(RG(V))  &kp RG(C)     &kp RG(V)       &trans          &trans                                                                         &kp PIPE
+&trans             &kp N7    &kp N8        &kp N9        &kp MINUS                                   &kp CARET         &kp AMPERSAND       &kp RS(UP_ARROW)    &kp F4               &kp F5
+&kp DOUBLE_QUOTES  &kp N4    &kp N5        &kp N6        &kp COLON   &kp NUMBER_0    &kp UNDERSCORE  &kp EXCLAMATION   &kp RS(LEFT_ARROW)  &kp RS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PERCENT
+&kp KP_SLASH       &kp N1    &kp N2        &kp N3        &kp PERIOD  &kp EQUAL       &kp LG(SPACE)   &kp LEFT_BRACKET  &kp LG(C)           &kp LG(X)           &kp LG(V)            &kp F12
+&kp SINGLE_QUOTE   &kp PLUS  &kp NUMBER_0  &kp LEFT_ALT  &kp RG(C)   &kp RG(V)       &trans          &trans                                                                         &kp PIPE
             >;
 
             sensor-bindings =
