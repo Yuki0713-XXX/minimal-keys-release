@@ -40,7 +40,7 @@
             label = "JUMP_CELL";
         };
 
-        BT0: BT1 {
+        bt0: BT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -52,7 +52,7 @@
             label = "BT1";
         };
 
-        BT1: BT1 {
+        bt1: BT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -65,7 +65,7 @@
             label = "BT1";
         };
 
-        BT2: BT3 {
+        bt2: BT3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
