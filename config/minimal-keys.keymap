@@ -14,7 +14,54 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <23 22>;
+        };
+
+        eq {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <20 21>;
+        };
+
+        question {
+            bindings = <&kp QUESTION>;
+            key-positions = <32 33>;
+        };
+
+        L_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <18 19>;
+        };
+
+        R_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <19 20>;
+        };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <24 26>;
+        };
+
+        Paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <24 25>;
+        };
+
+        Cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <23 24>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
