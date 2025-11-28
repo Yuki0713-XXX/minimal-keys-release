@@ -27,7 +27,7 @@
         Login: Login {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp Y &kp M &kp O &kp R &kp I &kp T &kp A &kp N &kp I &kp N0 &kp N0 &kp N1 &kp TAB &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp N2 &kp N6 &kp LEFT_BRACKET &kp RET>;
+            bindings = <&kp Y &kp M &kp O &kp R &kp I &kp T &kp A &kp N &kp I &kp N0 &kp N0 &kp N1 &kp TAB &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp N2 &kp N6 &kp LEFT_BRACKET &kp RET>;
             label = "LOGIN";
             wait-ms = <20>;
         };
