@@ -40,7 +40,7 @@
             label = "JUMP_CELL";
         };
 
-        bt0: BT1 {
+        bt_Mac: BT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -50,31 +50,6 @@
                 <&macro_wait_time 500>;
 
             label = "BT1";
-        };
-
-        bt1: BT1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 4>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 1>,
-                <&macro_wait_time 500>,
-                <&tog_on 4>;
-
-            label = "BT1";
-        };
-
-        bt2: BT3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 4>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 2>,
-                <&macro_wait_time 500>;
-
-            label = "BT3";
         };
 
         Today: Today {
@@ -89,6 +64,31 @@
                 <&macro_wait_time 30>;
 
             label = "TODAY";
+        };
+
+        bt_Win: bt1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 4>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>,
+                <&tog_on 4>;
+
+            label = "BT1";
+        };
+
+        bt_iPad: bt2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_off 4>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 2>,
+                <&macro_wait_time 500>;
+
+            label = "BT2";
         };
     };
 
