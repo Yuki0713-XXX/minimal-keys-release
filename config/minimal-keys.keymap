@@ -183,7 +183,7 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                      &kp T                                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                      &kp G                 &kp INT_YEN             &kp LS(INTERNATIONAL_1)  &kp H        &kp J  &lt 10 K   &lt 3 L  &kp MINUS
-&kp Z      &kp X         &kp C         &kp V                      &kp B                 &kp LEFT_BRACKET        &lt 8 SLASH              &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
+&kp Z      &kp X         &kp C         &kp V                      &kp B                 &lt 8 LEFT_BRACKET      &kp SLASH                &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
 &kp LC(Z)  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LCTRL INT_HENKAN    &lt 1 BACKSPACE          &lt 2 ENTER                             &kp LS(LC(NUMBER_4))
             >;
 
@@ -273,10 +273,10 @@
 
         Bluetooth {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans  &trans          &kp UP_ARROW    &trans           &trans                    &trans  &trans   &trans   &trans    &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans    &trans  &trans  &sw_Mac  &sw_Win  &sw_iPad  &trans
+&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans   &trans   &trans    &trans
+&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                              &trans
             >;
         };
 
