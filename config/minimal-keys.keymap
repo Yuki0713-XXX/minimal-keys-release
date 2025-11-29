@@ -61,6 +61,16 @@
             bindings = <&kp LC(X)>;
             key-positions = <23 24>;
         };
+
+        L_click2 {
+            bindings = <&none>;
+            key-positions = <30 31>;
+        };
+
+        R_click2 {
+            bindings = <&none>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -203,10 +213,10 @@
 
         Mac_num {
             bindings = <
-&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                      &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON             &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA             &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT SPACE  &mt LCTRL F9     &trans  &trans                                                                 &Login
+&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                              &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON     &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA     &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &kp LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &Login
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -247,10 +257,10 @@
 
         Win_NUM {
             bindings = <
-&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                      &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON             &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA             &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT SPACE  &mt LCTRL F9     &trans  &trans                                                                 &Login
+&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                              &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON     &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA     &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &kp LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &Login
             >;
 
             sensor-bindings =
