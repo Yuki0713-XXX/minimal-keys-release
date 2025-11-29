@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -87,18 +86,6 @@
             label = "JUMP_CELL";
         };
 
-        sw_Mac: BT1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 4>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 0>,
-                <&macro_wait_time 500>;
-
-            label = "BT1";
-        };
-
         Today: Today {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -111,31 +98,6 @@
                 <&macro_wait_time 30>;
 
             label = "TODAY";
-        };
-
-        sw_Win: bt1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 4>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 1>,
-                <&macro_wait_time 500>,
-                <&tog_on 4>;
-
-            label = "BT1";
-        };
-
-        sw_iPad: bt2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&tog_off 4>,
-                <&macro_wait_time 200>,
-                <&bt BT_SEL 2>,
-                <&macro_wait_time 500>;
-
-            label = "BT2";
         };
     };
 
