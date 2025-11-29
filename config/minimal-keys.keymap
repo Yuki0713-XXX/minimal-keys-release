@@ -87,7 +87,7 @@
             label = "JUMP_CELL";
         };
 
-        bt_Mac: BT1 {
+        sw_Mac: BT1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -113,7 +113,7 @@
             label = "TODAY";
         };
 
-        bt_Win: bt1 {
+        sw_Win: bt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -126,7 +126,7 @@
             label = "BT1";
         };
 
-        bt_iPad: bt2 {
+        sw_iPad: bt2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
