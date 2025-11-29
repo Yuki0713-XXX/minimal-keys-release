@@ -63,12 +63,12 @@
         };
 
         L_click2 {
-            bindings = <&none>;
+            bindings = <&mkp LCLK>;
             key-positions = <30 31>;
         };
 
         R_click2 {
-            bindings = <&none>;
+            bindings = <&mkp RCLK>;
             key-positions = <31 32>;
         };
     };
