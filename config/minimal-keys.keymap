@@ -287,7 +287,7 @@
 &trans  &trans          &kp UP_ARROW    &trans           &trans                    &trans  &trans   &trans   &trans    &trans
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans    &trans  &trans  &sw_Mac  &sw_Win  &sw_iPad  &trans
 &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans   &trans   &trans    &trans
-&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                              &trans
+&trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans                              &bt BT_CLR
             >;
         };
 
