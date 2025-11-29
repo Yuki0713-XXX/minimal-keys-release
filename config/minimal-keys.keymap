@@ -216,11 +216,13 @@
 
         Mac_Browse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                             &trans       &trans              &kp LG(UP_ARROW)     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans       &trans              &trans               &trans  &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans    &trans           &trans       &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LG(TAB))  &kp LG(TAB)                                                   &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         Win {
