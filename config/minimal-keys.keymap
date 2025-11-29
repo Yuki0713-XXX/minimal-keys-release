@@ -187,7 +187,7 @@
 &kp LC(Z)  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LCTRL INT_HENKAN    &lt 1 BACKSPACE          &lt 2 ENTER                             &kp LS(LC(NUMBER_4))
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Mac_fn {
@@ -198,7 +198,7 @@
 &trans  &trans  &trans  &trans  &trans   &trans    &trans  &trans                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         Mac_num {
@@ -209,9 +209,7 @@
 &kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT SPACE  &mt LCTRL F9     &trans  &trans                                                                 &Login
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Scroll {
@@ -222,7 +220,7 @@
 &trans  &trans  &trans    &trans  &trans  &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                          &trans
             >;
 
-            sensor-bindings = <&scroll>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Win {
@@ -233,7 +231,7 @@
 &kp LC(Z)  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LCTRL INT_HENKAN    &lt 5 BACKSPACE          &lt 6 ENTER                             &kp PRINTSCREEN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Win_FN {
@@ -244,7 +242,7 @@
 &trans         &trans  &trans  &trans  &trans   &trans    &trans                 &trans                                                &kp LA(F4)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         Win_NUM {
@@ -256,7 +254,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>,
+                <&scroll_up_down>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -268,7 +266,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                                                   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Mac_Browse {
@@ -279,7 +277,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LG(TAB))  &kp LG(TAB)                                                   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Bluetooth {
@@ -298,8 +296,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };
