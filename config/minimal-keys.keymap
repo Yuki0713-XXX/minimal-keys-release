@@ -50,19 +50,19 @@
         Mac_copy {
             bindings = <&kp LG(C)>;
             key-positions = <24 26>;
-            layers = <0 5 6 9>;
+            layers = <0 5 7 6>;
         };
 
         Mac_Paste {
             bindings = <&kp LG(V)>;
             key-positions = <24 25>;
-            layers = <0 5 6 9>;
+            layers = <0 5 7 6>;
         };
 
         Mac_Cut {
             bindings = <&kp LG(X)>;
             key-positions = <23 24>;
-            layers = <0 5 6 9>;
+            layers = <0 5 7 6>;
         };
 
         L_click2 {
@@ -78,7 +78,7 @@
         Win_copy {
             bindings = <&kp LC(C)>;
             key-positions = <24 26>;
-            layers = <1 6 7 8>;
+            layers = <1 7 8 9>;
         };
 
         Win_Cut {
@@ -220,9 +220,9 @@
         Mac {
             bindings = <
 &kp Q      &kp W      &kp E         &kp R                      &kp T                                                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S      &kp D         &kp F                      &kp G                 &kp INT_YEN                    &kp LS(INTERNATIONAL_1)  &kp H        &kp J  &lt 3 K    &lt 9 L  &kp MINUS
+&kp A      &kp S      &kp D         &kp F                      &kp G                 &kp INT_YEN                    &kp LS(INTERNATIONAL_1)  &kp H        &kp J  &lt 3 K    &lt 6 L  &kp MINUS
 &kp Z      &kp X      &kp C         &kp V                      &kp B                 &lt 13 LEFT_BRACKET            &kp SLASH                &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
-&kp LG(Z)  &kp LCTRL  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LEFT_COMMAND INT_HENKAN    &lt 5 BACKSPACE          &lt 6 ENTER                             &kp LS(LG(NUMBER_4))
+&kp LG(Z)  &kp LCTRL  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LEFT_COMMAND INT_HENKAN    &lt 5 BACKSPACE          &lt 7 ENTER                             &kp LS(LG(NUMBER_4))
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -230,10 +230,10 @@
 
         Win {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                      &kp T                                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G                 &kp INT_YEN             &kp LS(INTERNATIONAL_1)  &kp H        &kp J  &lt 3 K    &lt 8 L  &kp MINUS
-&kp Z      &kp X         &kp C         &kp V                      &kp B                 &lt 13 LEFT_BRACKET     &kp SLASH                &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
-&kp LC(Z)  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LCTRL INT_HENKAN    &lt 6 BACKSPACE          &lt 7 ENTER                             &kp PRINTSCREEN
+&kp Q      &kp W         &kp E         &kp R                      &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                      &kp G                 &kp INT_YEN             &kp UNDER        &kp H        &kp J  &lt 3 K    &lt 9 L  &kp MINUS
+&kp Z      &kp X         &kp C         &kp V                      &kp B                 &lt 13 LEFT_BRACKET     &kp SLASH        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
+&kp LC(Z)  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LCTRL INT_HENKAN    &lt 7 BACKSPACE  &lt 8 ENTER                             &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -274,10 +274,21 @@
 
         Mac_num {
             bindings = <
-&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                         &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON                &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &Login
+&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON                &kp LS(MINUS)    &trans  &kp BACKSPACE         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp DELETE
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans                &kp HOME               &kp DOWN_ARROW  &kp END           &kp SLASH
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                         &Login
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        Mac_Browse {
+            bindings = <
+&trans  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans                             &trans       &kp HOME            &kp LC(UP_ARROW)     &trans  &trans
+&trans  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans  &trans    &trans           &trans       &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp LG(W)
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans    &trans           &trans       &kp END             &kp LG(RIGHT_ARROW)  &trans  &trans
+&trans  &trans      &trans      &trans      &trans  &trans    &kp LS(LC(TAB))  &kp LC(TAB)                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -311,17 +322,6 @@
 &trans  &kp LC(N4)        &kp LC(N5)  &kp LC(N6)  &trans  &trans    &trans           &trans             &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans  &kp LC(W)
 &trans  &kp LC(NUMBER_1)  &kp LC(N2)  &kp LC(N3)  &trans  &trans    &trans           &trans             &kp END             &kp LA(RIGHT_ARROW)  &trans  &trans
 &trans  &trans            &trans      &trans      &trans  &trans    &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                                                   &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        Mac_Browse {
-            bindings = <
-&trans  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans                             &trans       &kp HOME            &kp LC(UP_ARROW)     &trans  &trans
-&trans  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &trans  &trans    &trans           &trans       &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp LG(W)
-&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &trans  &trans    &trans           &trans       &kp END             &kp LG(RIGHT_ARROW)  &trans  &trans
-&trans  &trans      &trans      &trans      &trans  &trans    &kp LS(LC(TAB))  &kp LC(TAB)                                                   &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
