@@ -50,19 +50,19 @@
         Mac_copy {
             bindings = <&kp LG(C)>;
             key-positions = <24 26>;
-            layers = <0 5 7 6>;
+            layers = <0 5 7 6 2 10 11 12>;
         };
 
         Mac_Paste {
             bindings = <&kp LG(V)>;
             key-positions = <24 25>;
-            layers = <0 5 7 6>;
+            layers = <0 5 7 6 10 11 2 12>;
         };
 
         Mac_Cut {
             bindings = <&kp LG(X)>;
             key-positions = <23 24>;
-            layers = <0 5 7 6>;
+            layers = <0 5 6 2 4 10 11 12>;
         };
 
         L_click2 {
@@ -84,13 +84,13 @@
         Win_Cut {
             bindings = <&kp LC(X)>;
             key-positions = <24 23>;
-            layers = <1>;
+            layers = <1 7 8 9>;
         };
 
         Win_Paste {
             bindings = <&kp LC(V)>;
             key-positions = <24 25>;
-            layers = <1>;
+            layers = <1 8 7 9>;
         };
     };
 
