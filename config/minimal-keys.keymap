@@ -230,10 +230,10 @@
 
         Win {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                      &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G                 &kp INT_YEN             &kp UNDER        &kp H        &kp J  &lt 3 K    &lt 9 L  &kp MINUS
-&kp Z      &kp X         &kp C         &kp V                      &kp B                 &lt 13 LEFT_BRACKET     &kp SLASH        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
-&kp LC(Z)  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LCTRL INT_HENKAN    &lt 7 BACKSPACE  &lt 8 ENTER                             &kp PRINTSCREEN
+&kp Q      &kp W         &kp E         &kp R                      &kp T                                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                      &kp G                 &kp INT_YEN             &kp LS(INTERNATIONAL_1)  &kp H        &kp J  &lt 3 K    &lt 9 L  &kp MINUS
+&kp Z      &kp X         &kp C         &kp V                      &kp B                 &lt 13 LEFT_BRACKET     &kp SLASH                &kp N        &kp M  &kp COMMA  &kp DOT  &kp SEMICOLON
+&kp LC(Z)  &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_ALT INT_MUHENKAN  &mt LEFT_SHIFT SPACE  &mt LCTRL INT_HENKAN    &lt 7 BACKSPACE          &lt 8 ENTER                             &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -241,10 +241,10 @@
 
         iPad {
             bindings = <
-&kp Q      &kp W                                 &kp E         &kp R                &kp T                                                       &kp Y         &kp U  &kp I      &kp O     &kp P
-&kp A      &kp S                                 &kp D         &kp F                &kp G                 &kp PIPE            &kp LS(MINUS)     &kp H         &kp J  &lt 3 K    &lt 12 L  &kp MINUS
-&kp Z      &kp X                                 &kp C         &kp V                &kp B                 &lt 13 AT           &kp SLASH         &kp N         &kp M  &kp COMMA  &kp DOT   &kp SEMICOLON
-&kp LG(Z)  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LEFT_ALT  &mt LCTRL LC(SPACE)  &mt LEFT_SHIFT SPACE  &kp LEFT_COMMAND    &lt 10 BACKSPACE  &lt 11 ENTER                              &kp LS(LG(NUMBER_4))
+&kp Q      &kp W                                 &kp E         &kp R                &kp T                                                                 &kp Y         &kp U  &kp I      &kp O     &kp P
+&kp A      &kp S                                 &kp D         &kp F                &kp G                 &kp INTERNATIONAL_3    &kp LS(INTERNATIONAL_1)  &kp H         &kp J  &lt 3 K    &lt 12 L  &kp MINUS
+&kp Z      &kp X                                 &kp C         &kp V                &kp B                 &lt 13 LEFT_BRACKET    &kp SLASH                &kp N         &kp M  &kp COMMA  &kp DOT   &kp SEMICOLON
+&kp LG(Z)  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LEFT_ALT  &mt LCTRL LC(SPACE)  &mt LEFT_SHIFT SPACE  &kp LEFT_COMMAND       &lt 10 BACKSPACE         &lt 11 ENTER                              &kp LS(LG(NUMBER_4))
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -274,10 +274,10 @@
 
         Mac_num {
             bindings = <
-&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON                &kp LS(MINUS)    &trans  &kp BACKSPACE         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans                &kp HOME               &kp DOWN_ARROW  &kp END           &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                         &Login
+&trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                         &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON                &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &Login
             >;
 
             sensor-bindings = <&scroll_up_down>;
