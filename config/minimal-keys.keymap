@@ -340,10 +340,10 @@
 
         iPad_num {
             bindings = <
-&trans             &kp N7  &kp N8        &kp N9  &kp MINUS                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UP_ARROW    &kp LEFT_BRACKET     &kp RIGHT_BRACKET
-&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6  &kp COLON  &kp LS(MINUS)    &trans  &kp BACKSPACE         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3  &kp COMMA  &kp PERIOD       &trans  &trans                &kp LC(LEFT_ARROW)     &kp DOWN_ARROW  &kp LC(RIGHT_ARROW)  &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &trans  &trans     &trans           &trans  &trans                                                                            &trans
+&trans             &kp N7  &kp N8        &kp N9  &kp MINUS                           &kp LS(NUMBER_8)  &kp LS(NUMBER_9)    &kp UP_ARROW    &kp RIGHT_BRACKET    &kp BACKSLASH
+&kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6  &kp COLON  &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DELETE
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3  &kp COMMA  &kp PERIOD       &trans  &trans            &kp LC(LEFT_ARROW)  &kp DOWN_ARROW  &kp LC(RIGHT_ARROW)  &kp SLASH
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &trans  &trans     &trans           &trans  &trans                                                                     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
