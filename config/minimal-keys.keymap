@@ -102,14 +102,6 @@
             label = "TO_LAYER_0";
         };
 
-        Login: Login {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U &kp K &kp I &kp DOT &kp M &kp O &kp R &kp I &kp T &kp A &kp N &kp I &kp LEFT_BRACKET &kp P &kp W &kp C &kp DOT &kp C &kp O &kp M &kp TAB &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp N2 &kp N6 &kp LEFT_BRACKET &kp RET>;
-            label = "LOGIN";
-            wait-ms = <40>;
-        };
-
         Jump_cell: Jump_cell {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -174,6 +166,21 @@
                 <&tog_on 2>;
 
             label = "SW_IPAD";
+        };
+
+        ron: ron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp N2 &kp N6 &kp LEFT_BRACKET &kp RET>;
+            label = "RON";
+        };
+
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp U &kp K &kp I &kp DOT &kp M &kp O &kp R &kp I &kp T &kp A &kp N &kp I &kp LEFT_BRACKET &kp P &kp W &kp C &kp DOT &kp C &kp O &kp M &kp TAB>;
+            label = "MAIL";
+            wait-ms = <20>;
         };
     };
 
@@ -276,8 +283,8 @@
             bindings = <
 &trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                         &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
 &kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON                &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &Login
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &mail
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &ron
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -309,8 +316,8 @@
             bindings = <
 &trans             &kp N7  &kp N8        &kp N9            &kp MINUS                                         &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp UP_ARROW    &kp RIGHT_BRACKET  &kp BACKSLASH
 &kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6            &kp COLON                &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &Login
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3            &kp COMMA                &kp PERIOD       &trans  &trans            &kp HOME          &kp DOWN_ARROW  &kp END            &mail
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &mt LEFT_ALT F10  &mt LEFT_SHIFT LEFT_ALT  &mt LCTRL F9     &trans  &trans                                                                 &ron
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -342,8 +349,8 @@
             bindings = <
 &trans             &kp N7  &kp N8        &kp N9  &kp MINUS                           &kp LS(NUMBER_8)  &kp LS(NUMBER_9)    &kp UP_ARROW    &kp RIGHT_BRACKET    &kp BACKSLASH
 &kp DOUBLE_QUOTES  &kp N4  &kp N5        &kp N6  &kp COLON  &kp LS(MINUS)    &trans  &kp BACKSPACE     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp DELETE
-&kp KP_SLASH       &kp N1  &kp N2        &kp N3  &kp COMMA  &kp PERIOD       &trans  &trans            &kp LC(LEFT_ARROW)  &kp DOWN_ARROW  &kp LC(RIGHT_ARROW)  &kp SLASH
-&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &trans  &trans     &trans           &trans  &trans                                                                     &trans
+&kp KP_SLASH       &kp N1  &kp N2        &kp N3  &kp COMMA  &kp PERIOD       &trans  &trans            &kp LC(LEFT_ARROW)  &kp DOWN_ARROW  &kp LC(RIGHT_ARROW)  &mail
+&kp SINGLE_QUOTE   &trans  &kp NUMBER_0  &trans  &trans     &trans           &trans  &trans                                                                     &ron
             >;
 
             sensor-bindings = <&scroll_up_down>;
