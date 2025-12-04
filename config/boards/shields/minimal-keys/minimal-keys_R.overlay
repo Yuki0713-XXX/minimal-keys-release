@@ -63,3 +63,10 @@
         scroll-layers = <3>;
     };
 };
+
+/* ==== Bluetooth 出力パワー強化（遅延改善）==== */
+&radio {
+    tx-power = <4>;
+};
+
+
