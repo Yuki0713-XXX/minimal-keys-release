@@ -1,3 +1,7 @@
+#
+# minimal-keys Shield configuration
+#
+
 if SHIELD_MINIMAL_KEYS_R
 
 config ZMK_KEYBOARD_NAME
@@ -20,3 +24,57 @@ config ZMK_SPLIT
     default y
 
 endif
+
+
+#
+# ---------------------------------------------------------
+#  Bluetooth 安定化・オーディオ干渉対策（XIAO BLE 用）
+# ---------------------------------------------------------
+#
+
+# 出力パワー最大化（遅延・途切れ改善に最重要）
+config BT_CTLR_TX_POWER_PLUS_4
+    default y
+
+# 接続インターバル調整（遅延の改善 + 音楽との干渉低減）
+config BT_PERIPHERAL_PREF_MIN_INT
+    default 24
+
+config BT_PERIPHERAL_PREF_MAX_INT
+    default 40
+
+config BT_PERIPHERAL_PREF_LATENCY
+    default 4
+
+# スキャン負荷軽減（イヤホンと競合しないように）
+config BT_GAP_SCAN_INTERVAL
+    default 0x0060
+
+config BT_GAP_SCAN_WINDOW
+    default 0x0030
+
+# 電源管理（深いスリープによる遅延防止）
+config PM
+    default y
+
+config PM_DEVICE
+    default y
+
+
+#
+# ---------------------------------------------------------
+#  RGB / LED 完全無効化（レイヤーLED含む・電池節約）
+# ---------------------------------------------------------
+#
+
+# アンダーグロー RGB 無効化
+config ZMK_RGB_UNDERGLOW
+    default n
+
+# レイヤーインジケータ RGB 無効化
+config ZMK_RGB_INDICATORS
+    default n
+
+# レイヤー毎のRGB動作を無効化
+config ZMK_RGB_LAYER
+    default n
