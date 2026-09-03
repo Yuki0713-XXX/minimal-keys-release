@@ -2,15 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: hyhy-masa
-      url-base: https://github.com/hyhy-masa
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: petejohanson
       url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: hyhy-masa
+      remote: zmkfirmware
       revision: 09ee8b42
       import: app/west.yml
     - name: zmk-pmw3610-driver
