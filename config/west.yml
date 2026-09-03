@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: kumamod
-      url-base: https://github.com/kumamod
+    - name: inorichi
+      url-base: https://github.com/inorichi
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
@@ -12,7 +12,7 @@ manifest:
       revision: v0.3.0
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: kumamod
+      remote: inorichi
       revision: c9ab9a3f
     - name: zmk-rgbled-widget
       remote: caksoylar
