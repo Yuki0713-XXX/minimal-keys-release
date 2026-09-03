@@ -4,16 +4,14 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: petejohanson
-      revision: e0dd2e403d9715a31e89cf29e29fcf958f278ee9
+      url: https://github.com/petejohanson/zmk-pmw3610-driver.git
+      revision: master
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: e9472d6c
