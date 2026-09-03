@@ -18,11 +18,11 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: xiao_ble/zmk
     shield: minimal-keys_R
     snippet: studio-rpc-usb-uart
-  - board: xiao_ble
+  - board: xiao_ble/zmk
     shield: minimal-keys_L
     snippet: studio-rpc-usb-uart
-  - board: xiao_ble
+  - board: xiao_ble/zmk
     shield: settings_reset
