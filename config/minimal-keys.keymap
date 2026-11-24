@@ -171,7 +171,7 @@
         ron: ron {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp N2 &kp N6 &kp LEFT_BRACKET &kp RET>;
+            bindings = <&kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp R &kp O &kp N &kp B &kp A &kp K &kp U &kp N2 &kp N7 &kp LEFT_BRACKET &kp RET>;
             label = "RON";
         };
 
